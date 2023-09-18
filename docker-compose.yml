@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  openresume:
+    container_name: openresume
+    image: peppershade/open-resume:latest
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+    mem_limit: 2g
+    cpu_shares: 768
